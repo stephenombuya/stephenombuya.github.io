@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion Stephen</title>
+    
+    <!-- =====Favicons===== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- =====CSS===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo2.png" alt="My Brand Logo" class="logo">
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/engineer.png" alt="Engineer's Image">
+            <h1>Stephen Ombuya</h1>
+            <p>Using the vast knowledge of 
+                <strong>Software Engineering</strong> 
+                to build effective, long-lasting solutions
+                 to clients, individuals, and organizations problems.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/stephenombuya" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/stephen-ombuya-backend-web-engineer/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/FrankStevo48068" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:mailto:michiekaombuya@gmail.com" class="mail-icon" title="Send me an email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <button class="btn projectsBtn" id="projectsBtn">View Projects</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am an experienced <strong>Software Engineer</strong> with expertise <br>in 
+                    <strong>Back-End Development</strong>, <strong>data analysis</strong>, and <strong>cloud technologies</strong>. I am passionate about building scalable solutions and implementing data-driven approaches to solve complex problems.
+                </p>
+                <br>
+                <p>
+                    With a strong commitment to <strong>innovation</strong>, <strong>collaboration</strong>, and <strong>continuous learning</strong>, I thrive in designing impactful applications that empower businesses and enhance user experiences.
+                </p>
+                <br>
+                <p>
+                    Let’s create efficient, cutting-edge software solutions together!
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/logo2.png" alt="My Logo" />
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/restaurant.jpeg" alt="Restaurant Image">
+                </div>
+                <div class="project-info">
+                    <h3>Restaurant Back-End Application Architecture</h3>
+                    <p>Java, MySQL, Apache Kafka, Spring Boot, Maven, AWS</p>
+                    <!-- TODO: Link to be added later on! -->
+                    <a href="#">Restaurant Application</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/cover.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Python Challenges (Tips and Tricks) from the book 
+                        <i>Python Tips And Tricks</i> by <strong>Benjamin Bennett Alexander</strong>
+                    </h3>
+                    <p>Python Tips and Tricks is a series of exercises <br>
+                        I have been doing in Python to challenge my <br>
+                        understanding and also practice the concepts I have learned.
+                    </p>
+                    <a href="https://github.com/stephenombuya/PythonTipsAndTricks">Python Tips and Tricks</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/gympreview.png" alt="gym interior">
+                </div>
+                <div class="project-info">
+                    <h3>Gym website</h3>
+                    <p>This project aims to provide a seamless experience 
+                        for users looking to join a gym, stay informed about
+                        class schedules, and book personal training sessions.
+                        The website is built with HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="https://fitnesschampion.netlify.app/">Fitness Champion</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/banner1.jpg" alt="Car Sale website image">
+                </div>
+                <div class="project-info">
+                    <h3>Car Sale website</h3>
+                    <p>A sleek, responsive front-end-only website for a car sale business. Built with HTML, CSS, and JavaScript, this website offers a seamless browsing experience for car buyers, showcasing available cars, customer reviews, and a feedback system with modal functionality for detailed item views.</p>
+                    <a href="https://carvanah.netlify.app/">Car Sale Website</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/spam-filter.jpeg" alt="Spam Filter App image">
+                </div>
+                <div class="project-info">
+                    <h3>Spam Filter</h3>
+                    <p>A robust spam filter application designed to detect 
+                        and filter spam messages. Utilizing regular expressions, 
+                        this project aims to enhance message security 
+                        and improve user experience by minimizing unwanted messages.
+                    </p>
+                    <a href="https://github.com/stephenombuya/Spam-Filter">Spam Filter</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Background.png" alt="Coffee Shop image">
+                </div>
+                <div class="project-info">
+                    <h3>Coffee Shop</h3>
+                    <p>Welcome to the Coffee Shop Website, an elegant and 
+                        responsive website designed to showcase the offerings, 
+                        atmosphere, and culture of a coffee shop. This project highlights 
+                        web development skills using HTML5, CSS3, and JavaScript to create 
+                        a user-friendly experience for visitors.
+                    </p>
+                    <a href="https://thacoffeeshop.netlify.app/">Coffee Shop</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/weather-dashboard.jpeg" alt="Weather Dashboard">
+                </div>
+                <div class="project-info">
+                    <h3>Weather Dashboard</h3>
+                    <p>This project is a simple Weather Dashboard that allows users
+                        to search for current weather information by city. 
+                        The application displays real-time weather data based on the user’s input.
+                    </p>
+                    <a href="https://steveproject.netlify.app/">Weather Dashboard</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/credit-card.png" alt="Credit Card">
+                </div>
+                <div class="project-info">
+                    <h3>Credit Card</h3>
+                    <p>A Credit Card UI design created using HTML5 and CSS3. 
+                        This project is designed to practice CSS styling techniques, 
+                        including layouts, shadows, and transitions, to simulate the 
+                        look and feel of a real credit card.
+                    </p>
+                    <a href="https://github.com/stephenombuya/credit-card">Credit Card</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/hms.jpeg" alt="Hospital Management System">
+                </div>
+                <div class="project-info">
+                    <h3>Hospital Management System</h3>
+                    <p>This system is a software solution designed to streamline 
+                        and automate the administrative, operational, and clinical processes
+                        in healthcare facilities. It helps hospitals efficiently manage patient 
+                        records, appointments, billing, staff, inventory, and medical data.
+                    </p>
+                    <a href="https://github.com/stephenombuya/Hospital_Management_System">Hospital Management System</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/ims.jpeg" alt="Inventory Management System">
+                </div>
+                <div class="project-info">
+                    <h3>Inventory Management System</h3>
+                    <p>This is a software tool designed to track, organize, 
+                        and manage a business's inventory levels, orders, sales, and deliveries. 
+                        It helps businesses ensure they have the right products in the right quantities 
+                        at the right time, minimizing waste and reducing costs.
+                    </p>
+                    <a href="https://github.com/stephenombuya/inventorymanagementsystem">Inventory Management System</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <i class="fas fa-code fa-2x"></i>
+                <h3>Languages</h3>
+                <p>Java, Python, JavaScript, HTML5, CSS3, R, SQL</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-database fa-2x"></i>
+                <h3>Databases</h3>
+                <p>MySQL, PostgreSQL</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-cloud fa-2x"></i>
+                <h3>Cloud Computing</h3>
+                <p>Amazon Web Services (AWS)</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-chart-bar fa-2x"></i>
+                <h3>Data Analysis</h3>
+                <p>Excel, SQL, Python, Matplotlib, Seaborn</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-check-square fa-2x"></i>
+                <h3>Requirements Engineering</h3>
+                <p>Microsoft Word, Microsoft PowerPoint</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-puzzle-piece fa-2x"></i>
+                <h3>Frameworks</h3>
+                <p>Spring Boot, Flask, Django, React</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-paint-brush fa-2x"></i>
+                <h3>Graphic Design</h3>
+                <p>Canva, Looka, Microsoft Designer</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-rocket fa-2x"></i>
+                <h3>AI Tools</h3>
+                <p>ChatGPT, Gemini, Claude, GitHub Copilot</p>
+            </div>
+            <div class="skill-category">
+                <i class="fas fa-handshake fa-2x"></i>
+                <h3>Soft Skills</h3>
+                <p>Teamwork, collaboration, networking</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- New Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>Experience Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Front-End Developer</h3>
+                    <p>November 2024 - Present</p>
+                    <p>Front-End Web Development
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Web Developer</h3>
+                    <p>October 2024 - November 2024</p>
+                    <p>Developed a fully-functional website 
+                        for a gym owner. 
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Data Analyst</h3>
+                    <p>Jul 2024 - Nov 2024</p>
+                    <p>Analyzed various types of datasets that led to 
+                        identification of patterns/trends in the data.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Data Analyst</h3>
+                    <p>May 2024 - Aug 2024</p>
+                    <p>Did various projects for clients on 
+                        Upwork, Fiverr, on a freelance basis
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Web Application Developer</h3>
+                    <p>April 2024 - June 2024</p>
+                    <p>
+                        I worked in a cross-functional team to build an
+                        E-Commerce Web Application for a client.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Back-End Developer</h3>
+                    <p>January 2024 - May 2024</p>
+                    <p>Co-led a team of developers but I also worked 
+                        on the Server-Side to build an 
+                        inventory management system.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Back-End Developer</h3>
+                    <p>September 2023 - December 2023</p>
+                    <p>Did various projects for clients on 
+                        Upwork.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Statistics Section -->
+    <section id="statistics" class="statistics">
+        <h2>Career Statistics</h2>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Commits Per Week</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>My Blog</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="images/fs.jpeg" alt="Blog Post 1">
+                <div class="blog-content">
+                    <h3>Understanding Full-Stack Development</h3>
+                    <p>Explore the fundamentals of full-stack development and how to build end-to-end applications efficiently.</p>
+                    <a href="https://daily.dev/blog/full-stack-development-complete-guide-2024">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/da.jpg" alt="Blog Post 2">
+                <div class="blog-content">
+                    <h3>Top 5 Tools for Data Analysis</h3>
+                    <p>Discover the best tools for analyzing and interpreting data to drive actionable insights.</p>
+                    <a href="https://www.simplilearn.com/top-data-analysis-tools-article">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/cloudsolutions.png" alt="Blog Post 3">
+                <div class="blog-content">
+                    <h3>Building Scalable Cloud Solutions</h3>
+                    <p>Learn about designing cloud-based systems that handle growth and maintain performance.</p>
+                    <a href="https://bloggingfordevs.com/cloud-blogs/">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/pmp.jpeg" alt="Project Management">
+                <div class="blog-content">
+                    <h3>Project Management Essentials</h3>
+                    <p>Master the key principles of effective project management and delivering projects on time and within budget.</p>
+                    <a href="https://www.monitask.com/en/blog/15-must-read-project-management-blogs-the-top-resources-for-every-pm">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/re.jpeg" alt="Requirements Engineering">
+                <div class="blog-content">
+                    <h3>Requirements Engineering Basics</h3>
+                    <p>Learn how to capture, analyze, and document requirements for successful software development projects.</p>
+                    <a href="https://xebrio.com/requirements-engineering/">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/pythonautomation.jpeg" alt="Automation with Python">
+                <div class="blog-content">
+                    <h3>Automation with Python</h3>
+                    <p>Discover how to automate repetitive tasks and boost productivity using Python scripting and tools.</p>
+                    <a href="https://www.learnenough.com/blog/automating-with-python?srsltid=AfmBOopjRmH0M08Rkqy-ZEslOxxtWMUEdkUr_iTr3LJ6vOZOszwPx317">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div id="formFeedback"></div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/stephenombuya" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/stephen-ombuya-backend-web-engineer/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/FrankStevo48068" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:mailto:michiekaombuya@gmail.com" class="mail-icon" title="Send me an email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Champion Stephen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enhanced JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
