@@ -78,7 +78,7 @@ This project is licensed under the GNU License - see the [LICENSE](https://githu
 If you have any questions or feedback, feel free to reach out to me via email:
 
 - [Email](mailto:michiekaombuya@gmail.com)
-- [LinkedIn](https://www.linkedin.com/in/stephen-ombuya-backend-web-engineer/)
+- [LinkedIn](https://www.linkedin.com/in/stephen-ombuya/)
 - [GitHub](https://github.com/stephenombuya)
 
 Thank you for visiting my personal portfolio website! 😊
