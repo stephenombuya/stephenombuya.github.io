@@ -1,4 +1,3 @@
-// Statistics Counter Animation
 const stats = document.querySelectorAll('.stat-number');
 
 function animateStats(stat) {
@@ -14,7 +13,6 @@ function animateStats(stat) {
     }
 }
 
-// Intersection Observer for Statistics
 const statsSection = document.querySelector('.statistics');
 if (statsSection) {
     const statsObserver = new IntersectionObserver((entries) => {
@@ -41,17 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Contact Form Submission
 document.getElementById('submitBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
-    // Get form data
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    // Simple form validation
     if (name === "" || email === "" || subject === "" || message === "") {
         showFeedback("Please fill in all fields.", "error");
     } else if (!validateEmail(email)) {
@@ -62,20 +57,17 @@ document.getElementById('submitBtn').addEventListener('click', function(event) {
     }
 });
 
-// Email validation function
 function validateEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return emailPattern.test(email);
 }
 
-// Display feedback message
 function showFeedback(message, type) {
     const feedbackDiv = document.getElementById('formFeedback');
     feedbackDiv.textContent = message;
     feedbackDiv.style.color = (type === "success") ? "green" : "red";
 }
 
-// Clear form fields
 function clearForm() {
     document.getElementById('name').value = "";
     document.getElementById('email').value = "";
@@ -94,7 +86,6 @@ if (newsletterForm) {
     });
 }
 
-// Add particle background effect to hero section
 const hero = document.querySelector('.hero');
 if (hero) {
     for (let i = 0; i < 50; i++) {
@@ -106,7 +97,6 @@ if (hero) {
     }
 }
 
-// Add scroll-triggered animations for sections
 const sections = document.querySelectorAll('section');
 const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -127,7 +117,6 @@ sections.forEach(section => sectionObserver.observe(section));
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
-// Add event listener to hamburger icon
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     hamburger.classList.toggle('active');
