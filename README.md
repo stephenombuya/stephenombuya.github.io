@@ -21,6 +21,7 @@ This personal portfolio website is designed to give visitors an insight into my 
 - An **About Me** section where you can learn more about my professional journey.
 - A **Projects** section showcasing key projects I've worked on, with descriptions and links to their repositories or live demos.
 - A **Skills** section highlighting the technologies I specialize in.
+- A **Blog** page where I share insights, tutorials, and articles on various topics related to software development and personal growth.
 - A **Contact** section with a **mail icon** to directly send me an email.
 
 The website is built with clean, semantic HTML, modern CSS for styling, and JavaScript for added interactivity.
