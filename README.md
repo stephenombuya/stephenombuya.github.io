@@ -31,6 +31,7 @@ The website is built with clean, semantic HTML, modern CSS for styling, and Java
 - **Interactive Sections**: Modal functionality for detailed project information, smooth scrolling, and a contact form.
 - **Animations**: Subtle animations are added to certain sections for better user experience.
 - **Accessible**: Focus on accessibility, ensuring the website is usable for a wide range of people, including those using screen readers.
+- **Blog Page**: A newly added blog page where visitors can read articles and insights on programming, technology, and more.
 
 ## Technologies Used
 
