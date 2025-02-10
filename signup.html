@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="background.js"></script>
+    <script defer src="backend.js"></script>
+</head>
+<body>
+    <section class="auth-container">
+        <div class="auth-box">
+            <h2>Join Us Today!</h2>
+            <p>Create an account to explore projects and stay updated with blog posts.</p>
+
+            <form id="signup-form">
+                <div class="input-group">
+                    <input type="text" id="first-name" placeholder=" " required>
+                    <label for="first-name">First Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="last-name" placeholder=" " required>
+                    <label for="last-name">Last Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="signup-email" placeholder=" " required>
+                    <label for="signup-email">Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="signup-password" placeholder=" " required>
+                    <label for="signup-password">Password</label>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p class="links">Already have an account? <a href="login.html">Log in here</a></p>
+        </div>
+    </section>
+</body>
+</html>
