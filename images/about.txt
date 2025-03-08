@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Mochiy Pop P One
-- Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/mochiypoppone/v10/Ktk2AKuPeY_td1-h9LayHYWCjAqyN4O3WYZB_sU.ttf
-- Font License: undefined)
