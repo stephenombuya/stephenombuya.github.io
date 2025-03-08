@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger" id="menu-toggle">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <hr class="nav-divider"> <!-- Divider -->
+                <li><a href="about.html"><i class="fas fa-user"></i>About</a></li>
+                <hr class="nav-divider"> <!-- Divider -->
+                <li><a href="projects.html" class="active"><i class="fas fa-code"></i>Projects</a></li>
+                <hr class="nav-divider"> <!-- Divider -->
+                <li><a href="services.html"><i class="fas fa-briefcase"></i>Services</a></li>
+                <hr class="nav-divider"> <!-- Divider -->
+                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+
+            <!-- Footer Moved Inside Navigation -->
+            <footer class="sidebar-footer">
+                <p>© 2025 Your Name. All Rights Reserved.</p>
+            </footer>
+        </nav>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <main>
+        <h1 class="projects-title">My Projects</h1>
+        <p class="project-description">
+            Welcome to my projects showcase! 🚀 Here, you’ll find a collection of <b>real-world software solutions</b> that I’ve built, each designed to <b>solve complex problems, enhance user experiences, and push technological boundaries</b>.  
+            From <b>scalable backend architectures</b> and <b>full-stack applications</b> to <b>data analysis projects</b>, every project reflects my dedication to <b>clean code, performance optimization, and innovative problem-solving</b>.  
+        
+            Whether it’s a <b>real estate management system</b>, a <b>hotel booking platform</b>, or an <b>AI-powered data analytics tool</b>, each project represents countless hours of <b>coding, debugging, and refining</b> to create robust, high-quality software.  
+        
+            Explore my work, check out the <b>live demos and GitHub repositories</b>, and see how technology transforms ideas into reality! If you have a project in mind, let's build something amazing together! 🚀✨  
+        </p>        
+
+        <!-- Projects Section -->
+        <section class="projects-container">
+            <!-- Project Cards -->
+            <div class="project-card">
+                <img src="images/project1.jpeg" alt="Project 1">
+                <h2>Real Estate Management System</h2>
+                <p>A back-end web application for managing real estate listings and transactions.</p>
+                <p><strong>Tech Stack:</strong> Spring, Spring Boot, MySQL, Java</p>
+                <div class="project-links">
+                    <a href="https://realestate-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/RealEstate-Backend-Web-Application" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2.jpeg" alt="Project 2">
+                <h2>Hotel Booking System</h2>
+                <p>Backend architecture for a hotel management system, handling reservations, guest tracking, and payments.</p>
+                <p><strong>Tech Stack:</strong> Spring Boot, MySQL, Java</p>
+                <div class="project-links">
+                    <a href="https://hotelbooking-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/hotelmanagementsystem" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project3.jpeg" alt="Project 3">
+                <h2>Hospital Management System</h2>
+                <p>A full-stack web application for a hospital management system, handling patient records and appointments.</p>
+                <p><strong>Tech Stack:</strong> Python, HTML5 & CSS3, JavaScript, MySQL</p>
+                <div class="project-links">
+                    <a href="https://hospital-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/Hospital_Management_System" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project4.jpeg" alt="Project 3">
+                <h2>Flight Booking System</h2>
+                <p>Backend architecture for a flight booking system, handling flight reservations.</p>
+                <p><strong>Tech Stack:</strong>Java, Spring Boot, Spring Data JPA, Spring Security, MySQL</p>
+                <div class="project-links">
+                    <a href="https://flight-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/Flight-Booking-System" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/eami.png" alt="Project 1">
+                <h2>East Africa Mineral Insights</h2>
+                <p>This is a full-stack, multi-page website showcasing the vast mineral resources of Kenya and East Africa.</p>
+                <p><strong>Tech Stack:</strong> TypeScript, React, Supabase, JavaScript <br>
+                HTML5 & CSS3, Tailwind CSS</p>
+                <div class="project-links">
+                    <a href="https://eami.netlify.app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/EAMI-Website" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/encryption.jpeg" alt="Project 3">
+                <h2>Multi-Cipher Encryption Tool</h2>
+                <p>A C-based encryption/decryption tool implementing <br>multiple cipher algorithms for text security.</p>
+                <p><strong>Tech Stack:</strong> C, Makefile</p>
+                <div class="project-links">
+                    <a href="https://encryption-decryption-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/Encryption-And-Decryption-Tool" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/compressor.jpeg" alt="Project 3">
+                <h2>File Compression Tool</h2>
+                <p>A simple command-line utility written in C for compressing and decompressing files using the zlib library.</p>
+                <p><strong>Tech Stack:</strong> C, Makefile</p>
+                <div class="project-links">
+                    <a href="https://compressor-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/File-Compression-Tool" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/laptopbattery.jpeg" alt="Project 1">
+                <h2>Laptop Battery Management Tool</h2>
+                <p>A cross-platform battery management solution designed to monitor laptop <br> battery levels
+                    and prevent overcharging through intelligent charging control and notifications.
+                </p>
+                <p><strong>Tech Stack:</strong> Python, C++, JavaScript, Rust, C, Electron</p>
+                <div class="project-links">
+                    <a href="https://battery-manager-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/Laptop-Battery-Management-Tool" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/sms.jpeg" alt="Project 3">
+                <h2>School Management System</h2>
+                <p>It is a back-end application designed to manage students, faculty, academic schedules, and other school-related operations.</p>
+                <p><strong>Tech Stack:</strong> Java, Spring Boot, Maven, MySQL, Spring Security</p>
+                <div class="project-links">
+                    <a href="https://school-management-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/School-Management-System" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/ecommerce.jpeg" alt="Project 3">
+                <h2>E-Commerce Back-End Web Application</h2>
+                <p>This project is a robust and scalable back-end for an E-Commerce platform, built with Java and Spring Boot.</p>
+                <p><strong>Tech Stack:</strong> Java, Spring Boot, Maven, MySQL, Spring Security</p>
+                <div class="project-links">
+                    <a href="https://ecommerce-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/E-Commerce-Back-End-Web-App" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/sms.jpeg" alt="Project 3">
+                <h2>Visitor Tracking API</h2>
+                <p>A lightweight, self-hosted visitor tracking solution using Python socket programming and MySQL, designed for small to medium-sized websites.</p>
+                <p><strong>Tech Stack:</strong> Python, JavaScript, MySQL</p>
+                <div class="project-links">
+                    <a href="https://visitor-tracker-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/Visitor-Tracking-Backend-API" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/sentimentanalyzer.png" alt="Project 3">
+                <h2>Sentiment Analysis Tool</h2>
+                <p>The Sentiment Analysis Tool is a web-based application that analyzes the sentiment of text data (e.g., tweets, reviews). <br>
+                    It provides sentiment trends (positive, negative, neutral) through visualizations and allows users to export the results as a CSV file.</p>
+                <p><strong>Tech Stack:</strong> Python, , HTML5 & CSS3, JavaScript, MySQL</p>
+                <div class="project-links">
+                    <a href="https://sentimentanalyzer-demo.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/stephenombuya/Sentiment-Analysis-Tool" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <!-- Add More Projects Here -->
+        </section>
+    </main>
+
+    <div class="theme-switch" id="theme-switch">🌓</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
