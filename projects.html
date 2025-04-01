@@ -24,9 +24,14 @@
             </ul>
 
             <!-- Footer Moved Inside Navigation -->
-            <footer class="sidebar-footer">
-                <p>© 2025 Stephen Ombuya. All Rights Reserved.</p>
+            <footer>
+                    <p>© <span id="year"></span> Stephen Ombuya. All Rights Reserved.</p>
             </footer>
+                
+            <script>
+                // Get the current year dynamically
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
         </nav>
         <div class="nav-overlay"></div>
     </header>
