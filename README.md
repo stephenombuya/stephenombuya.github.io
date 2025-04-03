@@ -72,10 +72,10 @@ If you'd like to contribute to this project, feel free to fork the repository, m
 - Please ensure that your code adheres to the existing structure and coding standards.
 
 ### **License**
-This project is licensed under the GNU License - see the [LICENSE](https://github.com/stephenombuya/stephenombuya.github.io/blob/main/LICENSE) file for details.
+This project is licensed under the **GNU General Public License v3.0**  - see the [LICENSE](https://github.com/stephenombuya/stephenombuya.github.io/blob/main/LICENSE) file for more details.
 
 ### **Contact Information**
-If you have any questions or feedback, feel free to reach out to me via email:
+If you have any questions or feedback, feel free to reach out to me through the following channels:
 
 - [Email](mailto:michiekaombuya@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/stephen-ombuya/)
