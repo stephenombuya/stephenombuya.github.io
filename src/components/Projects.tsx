@@ -7,6 +7,11 @@ import LBMTool from '../assets/images/lbm-tool.jpeg';
 import NexusAdmin from '../assets/images/nexus-admin.avif';
 import RealEstate from '../assets/images/real-estate.avif';
 import SSM from '../assets/images/ssm.avif';
+// TODO: Replace these temp images with dedicated images for each new project
+// Suggested sources: Unsplash / Pexels
+//   SHES      → a healthcare/clinical photo  → replace HospitalManagement below
+//   VPA       → an AI assistant / chat UI photo → replace LBMTool below
+//   CodeAnalyzer → a code/terminal/analytics photo → replace NexusAdmin below
 
 
 
@@ -46,6 +51,17 @@ const projects: Project[] = [
     tag: 'Backend · Java',
   },
   {
+    title: 'Smart Health Expert System',
+    description:
+      'Full-stack AI-driven clinical decision support system tailored to Kenya\'s healthcare context. Features a rule-based inference engine for symptom triage across 14 conditions, drug interaction checking against the Kenya Essential Medicines List, chronic disease tracking (glucose & BP), mental health monitoring, and a lab results interpreter — all secured with JWT and field-level encryption.',
+    stack: ['Python', 'Django', 'React', 'TypeScript', 'PostgreSQL', 'Docker', 'Tailwind CSS'],
+    github: 'https://github.com/stephenombuya/smart-health-expert-system',
+    demo: 'https://shes-demo.com',
+    image: HospitalManagement, // TODO: replace with a dedicated healthcare image
+    featured: true,
+    tag: 'Full-Stack · HealthTech',
+  },
+  {
     title: 'NexusAdmin Dashboard',
     description:
       'Enterprise-grade SaaS admin dashboard with real-time metrics, role-based access control, interactive charts, and full user management with sorting, filtering, and pagination.',
@@ -55,6 +71,26 @@ const projects: Project[] = [
     image: NexusAdmin,
     featured: true,
     tag: 'Frontend · Dashboard',
+  },
+  {
+    title: 'Virtual Personal Assistant',
+    description:
+      'Fully async Python virtual assistant with persistent memory via SQLAlchemy, comprehensive pytest test coverage, Docker containerisation, and a CI/CD pipeline. Refactored from a synchronous codebase into a clean async architecture for improved scalability and responsiveness.',
+    stack: ['Python', 'asyncio', 'SQLAlchemy', 'pytest', 'Docker', 'GitHub Actions'],
+    github: 'https://github.com/stephenombuya/virtual-personal-assistant',
+    demo: 'https://vpa-demo.com',
+    image: LBMTool, // TODO: replace with an AI assistant / chat UI image
+    tag: 'Backend · Python',
+  },
+  {
+    title: 'Code Contribution Analyzer',
+    description:
+      'Developer productivity tool that analyses code contribution patterns across repositories — tracking commit frequency, lines changed, file hotspots, and contributor activity to surface actionable insights about team and project health.',
+    stack: ['Python', 'Git', 'GitHub API', 'Data Analysis'],
+    github: 'https://github.com/stephenombuya/Code-Contribution-Analyzer',
+    demo: 'https://cca-demo.com',
+    image: NexusAdmin, // TODO: replace with a code/terminal/analytics image
+    tag: 'DevTools · Analytics',
   },
   {
     title: 'Real Estate Management System',
@@ -221,15 +257,15 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Featured (3 col) */}
-        <div className="grid lg:grid-cols-3 gap-6 mb-6">
+        {/* Featured (grid of 4 to accommodate new featured project) */}
+        <div className="grid lg:grid-cols-4 gap-6 mb-6">
           {featured.map((p, i) => (
             <ProjectCard key={p.title} project={p} index={i} />
           ))}
         </div>
 
-        {/* Rest (4 col) */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Rest */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {rest.map((p, i) => (
             <ProjectCard key={p.title} project={p} index={i} />
           ))}
