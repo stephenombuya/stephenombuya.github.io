@@ -9,8 +9,9 @@ import RealEstate from '../assets/images/real-estate.avif';
 import SSM from '../assets/images/ssm.avif';
 
 
+
+
 interface Project {
-  id: string 
   title: string
   description: string
   stack: string[]
@@ -23,7 +24,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 'ssm',
     title: 'Subscription Service Management',
     description:
       'Production-grade backend for managing subscription-based SaaS services. Features recurring billing via Stripe, user account management, usage analytics, webhook handling, and per-IP rate limiting with Bucket4j.',
@@ -35,7 +35,6 @@ const projects: Project[] = [
     tag: 'Backend · SaaS',
   },
   {
-    id: 'flight-booking',
     title: 'Flight Booking System',
     description:
       'Production-ready backend for flight reservations. Includes stateless JWT auth, role-based access control, atomic seat reservation, a payment gateway stub, async email notifications, and a full test suite of 40+ cases.',
@@ -47,19 +46,6 @@ const projects: Project[] = [
     tag: 'Backend · Java',
   },
   {
-    id: 'shes', 
-    title: 'Smart Health Expert System (SHES)',
-    description:
-      'Production-grade AI-powered clinical decision support system designed for real-world healthcare use in Kenya. Implements a rule-based inference engine for symptom triage, a multi-drug interaction checker with severity classification (minor → contraindicated), chronic disease tracking (glucose & blood pressure), mental health monitoring, and lab result interpretation. Built with a robust data consistency layer to prevent UI-state bugs, ensuring reliable multi-entity selection and interaction analysis. Secured with JWT authentication and designed for scalability with a clean, modular architecture.',
-    stack: ['Python', 'Django', 'React', 'TypeScript', 'PostgreSQL', 'Docker', 'Tailwind CSS'],
-    github: 'https://github.com/stephenombuya/smart-health-expert-system',
-    demo: 'https://shes-demo.com',
-    image: HospitalManagement,
-    featured: true,
-    tag: 'Full-Stack · AI · HealthTech',
-  },
-  {
-    id: 'nexus-admin',
     title: 'NexusAdmin Dashboard',
     description:
       'Enterprise-grade SaaS admin dashboard with real-time metrics, role-based access control, interactive charts, and full user management with sorting, filtering, and pagination.',
@@ -71,29 +57,6 @@ const projects: Project[] = [
     tag: 'Frontend · Dashboard',
   },
   {
-    id: 'virtual-assistant',
-    title: 'Virtual Personal Assistant',
-    description:
-      'Fully async Python virtual assistant with persistent memory via SQLAlchemy, comprehensive pytest test coverage, Docker containerisation, and a CI/CD pipeline. Refactored from a synchronous codebase into a clean async architecture for improved scalability and responsiveness.',
-    stack: ['Python', 'asyncio', 'SQLAlchemy', 'pytest', 'Docker', 'GitHub Actions'],
-    github: 'https://github.com/stephenombuya/virtual-personal-assistant',
-    demo: 'https://vpa-demo.com',
-    image: LBMTool, 
-    tag: 'Backend · Python',
-  },
-  {
-    id: 'cca',
-    title: 'Code Contribution Analyzer',
-    description:
-      'Developer productivity tool that analyses code contribution patterns across repositories — tracking commit frequency, lines changed, file hotspots, and contributor activity to surface actionable insights about team and project health.',
-    stack: ['Python', 'Git', 'GitHub API', 'Data Analysis'],
-    github: 'https://github.com/stephenombuya/Code-Contribution-Analyzer',
-    demo: 'https://cca-demo.com',
-    image: NexusAdmin,
-    tag: 'DevTools · Analytics',
-  },
-  {
-    id: 'real-estate',
     title: 'Real Estate Management System',
     description:
       'Back-end web application for managing real estate listings and transactions. Built with Spring and MySQL for scalable property data management.',
@@ -104,7 +67,6 @@ const projects: Project[] = [
     tag: 'Backend · Real Estate',
   },
   {
-    id: 'eami',
     title: 'East Africa Mineral Insights',
     description:
       'Full-stack, multi-page website showcasing Kenya and East Africa\'s mineral resources. Built with React, TypeScript, and Supabase.',
@@ -115,7 +77,6 @@ const projects: Project[] = [
     tag: 'Full-Stack',
   },
   {
-    id: 'hospital-management',
     title: 'Hospital Management System',
     description:
       'Full-stack web application for hospital management, handling patient records and appointments with a clean, accessible interface.',
@@ -126,7 +87,6 @@ const projects: Project[] = [
     tag: 'Full-Stack · Health',
   },
   {
-    id: 'lbm-tool',
     title: 'Laptop Battery Management Tool',
     description:
       'Cross-platform battery management solution that monitors battery levels and prevents overcharging through intelligent charging control and OS notifications.',
@@ -139,20 +99,20 @@ const projects: Project[] = [
 ]
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const delay = `stagger-${Math.min((index % 5) + 1, 5)}`
+  const delay = `stagger-${Math.min((index % 3) + 1, 5)}`
 
   if (project.featured) {
     return (
       <div className={`animate-in ${delay} group relative overflow-hidden border border-border hover:border-amber-400/40 transition-all duration-500 bg-card`}>
-        <div className="aspect-video overflow-hidden">
+        <div className="relative overflow-hidden">
           <img
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-card via-card/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-card via-card/80 to-transparent pointer-events-none z-0" />
         </div>
-        <div className="absolute inset-0 p-8 flex flex-col justify-end">
+        <div className="p-6 flex flex-col justify-end">
           <span className="font-mono text-xs text-amber-400 uppercase tracking-widest mb-3">
             {project.tag}
           </span>
@@ -261,17 +221,17 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Featured (grid of 4 to accommodate new featured project) */}
-        <div className="grid lg:grid-cols-4 gap-6 mb-6">
+        {/* Featured (3 col) */}
+        <div className="grid lg:grid-cols-3 gap-6 mb-6">
           {featured.map((p, i) => (
-            <ProjectCard key={p.id} project={p} index={i} />
+            <ProjectCard key={p.title} project={p} index={i} />
           ))}
         </div>
 
-        {/* Rest */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Rest (4 col) */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {rest.map((p, i) => (
-            <ProjectCard key={p.id} project={p} index={i} />
+            <ProjectCard key={p.title} project={p} index={i} />
           ))}
         </div>
 
