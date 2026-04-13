@@ -8,11 +8,24 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-D97706)](https://www.gnu.org/licenses/gpl-3.0)
+
+<div>
+
+  <!-- Repository Analytics -->
+![GitHub repo size](https://img.shields.io/github/repo-size/stephenombuya/stephenombuya.github.io)
+![GitHub language count](https://img.shields.io/github/languages/count/stephenombuya/stephenombuya.github.io)
+![GitHub top language](https://img.shields.io/github/languages/top/stephenombuya/stephenombuya.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/stephenombuya/stephenombuya.github.io)
+![GitHub contributors](https://img.shields.io/github/contributors/stephenombuya/stephenombuya.github.io)
+
+</div>
+
 ![Portfolio Preview](./src/assets/images/portfolio-preview.png)
 
 
 
-## ✦ Live Site
+
+## Live Site
 
 **[stephenombuya.github.io](https://stephenombuya.github.io)**
 
@@ -28,14 +41,14 @@ This portfolio is my primary professional web presence — a fully type-safe SPA
 
 | Feature | Details |
 |---|---|
-| 🎨 Dark editorial theme | Obsidian background, amber accents, Cormorant Garamond + DM Sans typography |
-| ✨ Scroll animations | `IntersectionObserver`-powered fade-up reveals with staggered delays |
-| 📱 Fully responsive | Mobile-first Tailwind grid, adaptive from 320 px upward |
-| 🔷 Type-safe | Strict TypeScript across all components, hooks, and interfaces |
-| ⚡ Fast builds | Vite with tree-shaking; ~55 KB gzipped JS after build |
-| 🚀 Automated deploys | GitHub Actions builds and publishes on every push to `main` |
-| 📬 Contact form | Mailto-based — zero backend, zero API keys |
-| ♿ Accessible | Semantic HTML, ARIA labels on icon-only controls, keyboard-navigable |
+|  Dark editorial theme | Obsidian background, amber accents, Cormorant Garamond + DM Sans typography |
+|  Scroll animations | `IntersectionObserver`-powered fade-up reveals with staggered delays |
+|  Fully responsive | Mobile-first Tailwind grid, adaptive from 320 px upward |
+|  Type-safe | Strict TypeScript across all components, hooks, and interfaces |
+|  Fast builds | Vite with tree-shaking; ~55 KB gzipped JS after build |
+|  Automated deploys | GitHub Actions builds and publishes on every push to `main` |
+|  Contact form | Mailto-based — zero backend, zero API keys |
+|  Accessible | Semantic HTML, ARIA labels on icon-only controls, keyboard-navigable |
 
 ---
 
@@ -248,5 +261,4 @@ This project is licensed under the **GNU General Public License v3.0** — see [
 **Stephen Ombuya** — Software Engineer, Nairobi, Kenya
 
 [![GitHub](https://img.shields.io/badge/GitHub-stephenombuya-181717?logo=github)](https://github.com/stephenombuya)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-stephen--ombuya-0A66C2?logo=linkedin)](https://www.linkedin.com/in/stephen-ombuya/)
 [![Email](https://img.shields.io/badge/Email-michiekaombuya%40gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:michiekaombuya@gmail.com)
