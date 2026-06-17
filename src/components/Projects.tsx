@@ -1,102 +1,7 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { Link } from 'react-router-dom'
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react'
-import EAMI from '../assets/images/eami.avif';
-import FlightBooking from '../assets/images/flight-booking.avif';
-import HospitalManagement from '../assets/images/hospital-management.avif';
-import LBMTool from '../assets/images/lbm-tool.jpeg';
-import NexusAdmin from '../assets/images/nexus-admin.avif';
-import RealEstate from '../assets/images/real-estate.avif';
-import SSM from '../assets/images/ssm.avif';
-
-
-
-
-interface Project {
-  title: string
-  description: string
-  stack: string[]
-  github: string
-  demo: string
-  image: string
-  featured?: boolean
-  tag: string
-}
-
-const projects: Project[] = [
-  {
-    title: 'Subscription Service Management',
-    description:
-      'Production-grade backend for managing subscription-based SaaS services. Features recurring billing via Stripe, user account management, usage analytics, webhook handling, and per-IP rate limiting with Bucket4j.',
-    stack: ['Java', 'Spring Boot', 'MySQL', 'Spring Security', 'Stripe SDK', 'Bucket4j'],
-    github: 'https://github.com/stephenombuya/Subscription-Service-Management',
-    demo: 'https://ssm-demo.com',
-    image: SSM,
-    featured: true,
-    tag: 'Backend · SaaS',
-  },
-  {
-    title: 'Flight Booking System',
-    description:
-      'Production-ready backend for flight reservations. Includes stateless JWT auth, role-based access control, atomic seat reservation, a payment gateway stub, async email notifications, and a full test suite of 40+ cases.',
-    stack: ['Java', 'Spring Boot', 'MySQL', 'Spring Security', 'JWT', 'Swagger'],
-    github: 'https://github.com/stephenombuya/Flight-Booking-System',
-    demo: 'https://flight-booking-demo.com',
-    image: FlightBooking,
-    featured: true,
-    tag: 'Backend · Java',
-  },
-  {
-    title: 'NexusAdmin Dashboard',
-    description:
-      'Enterprise-grade SaaS admin dashboard with real-time metrics, role-based access control, interactive charts, and full user management with sorting, filtering, and pagination.',
-    stack: ['React', 'TypeScript', 'Redux', 'Recharts', 'Tailwind CSS', 'Vite'],
-    github: 'https://github.com/stephenombuya/nexus-admin-dashboard',
-    demo: 'https://nexus-admin-dashboard-beta.vercel.app',
-    image: NexusAdmin,
-    featured: true,
-    tag: 'Frontend · Dashboard',
-  },
-  {
-    title: 'Real Estate Management System',
-    description:
-      'Back-end web application for managing real estate listings and transactions. Built with Spring and MySQL for scalable property data management.',
-    stack: ['Java', 'Spring', 'Spring Boot', 'MySQL'],
-    github: 'https://github.com/stephenombuya/RealEstate-Backend-Web-Application',
-    demo: 'https://real-estate-demo.com',
-    image: RealEstate,
-    tag: 'Backend · Real Estate',
-  },
-  {
-    title: 'East Africa Mineral Insights',
-    description:
-      'Full-stack, multi-page website showcasing Kenya and East Africa\'s mineral resources. Built with React, TypeScript, and Supabase.',
-    stack: ['TypeScript', 'React', 'Supabase', 'Tailwind CSS'],
-    github: 'https://github.com/stephenombuya/EAMI-Website',
-    demo: 'https://eami.netlify.app/',
-    image: EAMI,
-    tag: 'Full-Stack',
-  },
-  {
-    title: 'Hospital Management System',
-    description:
-      'Full-stack web application for hospital management, handling patient records and appointments with a clean, accessible interface.',
-    stack: ['Python', 'HTML5', 'CSS3', 'JavaScript', 'MySQL'],
-    github: 'https://github.com/stephenombuya/Hospital_Management_System',
-    demo: 'https://hospital-demo.com',
-    image: HospitalManagement,
-    tag: 'Full-Stack · Health',
-  },
-  {
-    title: 'Laptop Battery Management Tool',
-    description:
-      'Cross-platform battery management solution that monitors battery levels and prevents overcharging through intelligent charging control and OS notifications.',
-    stack: ['Python', 'C++', 'JavaScript', 'Rust', 'C', 'Electron'],
-    github: 'https://github.com/stephenombuya/Laptop-Battery-Management-Tool',
-    demo: 'https://lbm-demo.com',
-    image: LBMTool,
-    tag: 'Systems · Desktop',
-  },
-]
+import { projects, type Project } from '../data/projects'
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   const delay = `stagger-${Math.min((index % 3) + 1, 5)}`
@@ -136,18 +41,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             >
               <Github size={14} /> Code
             </a>
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to={`/projects/${project.slug}`}
               className="flex items-center gap-2 text-xs text-amber-400 hover:text-amber-soft transition-colors uppercase tracking-widest font-body"
             >
-              <ExternalLink size={14} /> Live Demo
-            </a>
+              <ArrowUpRight size={14} /> View Details
+            </Link>
           </div>
-        </div>
-        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <ArrowUpRight size={20} className="text-amber-400" />
         </div>
       </div>
     )
@@ -183,14 +83,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         >
           <Github size={13} /> Code
         </a>
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to={`/projects/${project.slug}`}
           className="flex items-center gap-2 text-xs text-amber-400/70 hover:text-amber-400 transition-colors uppercase tracking-widest font-body"
         >
-          <ExternalLink size={13} /> Demo
-        </a>
+          <ExternalLink size={13} /> Details
+        </Link>
       </div>
     </div>
   )

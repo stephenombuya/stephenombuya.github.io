@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { Link } from 'react-router-dom'
 import { Code2, Database, TrendingUp, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react'
 import { useState } from 'react'
 
@@ -144,12 +145,9 @@ export default function Services() {
               <ExternalLink size={14} />
               Rate Card
             </a>
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="btn-primary text-xs rounded-full py-3 px-5"
-            >
+            <Link to="/contact" className="btn-primary text-xs rounded-full py-3 px-5">
               Contact Me
-            </button>
+            </Link>
           </div>
         </div>
 

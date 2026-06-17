@@ -1,41 +1,25 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { NavLink, Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Services', href: '#services' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', to: '/' },
+  { label: 'About', to: '/about' },
+  { label: 'Projects', to: '/projects' },
+  { label: 'Blog', to: '/blog' },
+  { label: 'Services', to: '/services' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-  const [active, setActive] = useState('home')
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 40)
-
-      const sections = ['home', 'about', 'projects', 'services', 'contact']
-      for (const id of sections.reverse()) {
-        const el = document.getElementById(id)
-        if (el && window.scrollY >= el.offsetTop - 120) {
-          setActive(id)
-          break
-        }
-      }
-    }
+    const handleScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  const handleNav = (href: string) => {
-    setOpen(false)
-    const el = document.querySelector(href)
-    el?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <header
@@ -47,27 +31,26 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
-        <button
-          onClick={() => handleNav('#home')}
+        <Link
+          to="/"
           className="font-display text-2xl font-medium text-cream tracking-tight hover:text-amber-glow transition-colors duration-300"
         >
           S<span className="text-amber-glow">.</span>
-        </button>
+        </Link>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-10">
           {links.map((link) => (
-            <li key={link.href}>
-              <button
-                onClick={() => handleNav(link.href)}
-                className={`nav-link ${
-                  active === link.href.slice(1)
-                    ? 'text-amber-glow'
-                    : 'text-gray-400 hover:text-cream'
-                }`}
+            <li key={link.to}>
+              <NavLink
+                to={link.to}
+                end={link.to === '/'}
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? 'text-amber-glow' : 'text-gray-400 hover:text-cream'}`
+                }
               >
                 {link.label}
-              </button>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -95,15 +78,19 @@ export default function Navbar() {
         <div className="md:hidden bg-obsidian/98 backdrop-blur-md border-b border-border">
           <ul className="flex flex-col px-6 py-6 gap-6">
             {links.map((link) => (
-              <li key={link.href}>
-                <button
-                  onClick={() => handleNav(link.href)}
-                  className={`text-sm tracking-widest uppercase font-body transition-colors ${
-                    active === link.href.slice(1) ? 'text-amber-400' : 'text-gray-400'
-                  }`}
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  end={link.to === '/'}
+                  onClick={() => setOpen(false)}
+                  className={({ isActive }) =>
+                    `text-sm tracking-widest uppercase font-body transition-colors ${
+                      isActive ? 'text-amber-400' : 'text-gray-400'
+                    }`
+                  }
                 >
                   {link.label}
-                </button>
+                </NavLink>
               </li>
             ))}
             <li>

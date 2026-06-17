@@ -1,4 +1,14 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { NavLink } from 'react-router-dom'
+import { Github, Linkedin, Mail } from 'lucide-react'
+
+const footerLinks = [
+  { label: 'Home', to: '/' },
+  { label: 'About', to: '/about' },
+  { label: 'Projects', to: '/projects' },
+  { label: 'Blog', to: '/blog' },
+  { label: 'Services', to: '/services' },
+  { label: 'Contact', to: '/contact' },
+]
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -14,14 +24,19 @@ export default function Footer() {
 
           {/* Nav */}
           <nav className="flex flex-wrap justify-center gap-8">
-            {['home', 'about', 'projects', 'services', 'contact'].map((id) => (
-              <button
-                key={id}
-                onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
-                className="font-body text-xs tracking-widest uppercase text-gray-500 hover:text-amber-glow transition-colors"
+            {footerLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                end={link.to === '/'}
+                className={({ isActive }) =>
+                  `font-body text-xs tracking-widest uppercase transition-colors ${
+                    isActive ? 'text-amber-glow' : 'text-gray-500 hover:text-amber-glow'
+                  }`
+                }
               >
-                {id}
-              </button>
+                {link.label}
+              </NavLink>
             ))}
           </nav>
 
@@ -50,7 +65,6 @@ export default function Footer() {
           <p className="font-body text-xs text-gray-600">
             © {year} Stephen Ombuya. All rights reserved.
           </p>
-          
         </div>
       </div>
     </footer>
