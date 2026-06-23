@@ -1,6 +1,6 @@
 # Stephen Ombuya — Portfolio Website
 
-> A modern, single-page portfolio built with React, TypeScript, and Tailwind CSS — deployed to GitHub Pages via GitHub Actions.
+> A modern, multi-page portfolio built with React, TypeScript, and Tailwind CSS — deployed to GitHub Pages via GitHub Actions.
 
 [![Deploy to GitHub Pages](https://github.com/stephenombuya/stephenombuya.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/stephenombuya/stephenombuya.github.io/actions/workflows/deploy.yml)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://react.dev)
@@ -33,7 +33,7 @@
 
 ## Overview
 
-This portfolio is my primary professional web presence — a fully type-safe SPA that showcases projects, skills, and services. The site itself is designed to demonstrate front-end engineering quality: scroll-triggered animations, a refined dark editorial aesthetic, responsive layout from 320 px to 4K, and a sub-60 second deploy pipeline from `git push` to live.
+This portfolio is my primary professional web presence — a fully type-safe MPA that showcases projects, skills, and services. The site itself is designed to demonstrate front-end engineering quality: scroll-triggered animations, a refined dark editorial aesthetic, responsive layout from 320 px to 4K, and a sub-60 second deploy pipeline from `git push` to live.
 
 ---
 
