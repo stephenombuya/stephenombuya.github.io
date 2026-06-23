@@ -58,4 +58,100 @@ export const posts: Post[] = [
       'The goal is always to create something useful, understandable, and easy to improve over time.',
     ],
   },
+  {
+    slug: 'designing-pos-systems-for-real-businesses',
+    title: 'Designing POS Systems for Real Businesses',
+    excerpt:
+      'Lessons learned from building point of sale software that must remain reliable even when internet connectivity is unavailable.',
+    date: 'April 25, 2026',
+    category: 'Architecture',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
+    content: [
+      'A POS system is different from many web applications because sales cannot stop when connectivity fails.',
+      'Offline-first design becomes critical when businesses depend on continuous transactions throughout the day.',
+      'Reliable inventory management, local data persistence, and synchronization strategies all play an important role.',
+      'The best POS solutions prioritize stability, simplicity, and operational efficiency over unnecessary complexity.',
+    ],
+  },
+  {
+    slug: 'clean-architecture-in-modern-applications',
+    title: 'Applying Clean Architecture in Modern Applications',
+    excerpt:
+      'How separation of concerns helps teams build maintainable systems that can evolve without constant rewrites.',
+    date: 'April 8, 2026',
+    category: 'Engineering',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+    content: [
+      'Clean architecture encourages developers to focus on business rules before implementation details.',
+      'By isolating dependencies, systems become easier to test and adapt to changing requirements.',
+      'The goal is not perfection but creating codebases that remain understandable as they grow.',
+      'When applied thoughtfully, clean architecture reduces technical debt and improves team productivity.',
+    ],
+  },
+  {
+    slug: 'lessons-from-building-full-stack-projects',
+    title: 'Lessons From Building Full-Stack Projects',
+    excerpt:
+      'Key insights gained from developing complete applications from database design to user interfaces.',
+    date: 'March 22, 2026',
+    category: 'Development',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80',
+    content: [
+      'Building across the entire stack provides a better understanding of how technical decisions affect users.',
+      'Frontend performance, backend reliability, and database efficiency are deeply connected.',
+      'Many project challenges are not technical but involve communication and prioritization.',
+      'The most successful projects balance engineering quality with business goals.',
+    ],
+  },
+  {
+    slug: 'database-design-principles-every-developer-should-know',
+    title: 'Database Design Principles Every Developer Should Know',
+    excerpt:
+      'Strong applications begin with thoughtful data modeling and a clear understanding of relationships.',
+    date: 'March 5, 2026',
+    category: 'Databases',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=1200&q=80',
+    content: [
+      'A database should reflect business realities rather than application shortcuts.',
+      'Good normalization reduces duplication while maintaining flexibility.',
+      'Indexes can dramatically improve performance when used correctly.',
+      'A well-designed schema makes future development faster and less error-prone.',
+    ],
+  },
+  {
+    slug: 'from-internship-to-software-engineer',
+    title: 'From Internship to Software Engineer',
+    excerpt:
+      'Reflections on growth, continuous learning, and building confidence as a developer.',
+    date: 'February 16, 2026',
+    category: 'Career',
+    readTime: '4 min read',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
+    content: [
+      'Every developer starts somewhere, and growth comes from consistent practice.',
+      'Internships provide opportunities to learn how professional teams collaborate and deliver software.',
+      'The transition from learning concepts to solving real-world problems is where confidence develops.',
+      'Continuous learning remains one of the most important habits in a technology career.',
+    ],
+  },
+  {
+    slug: 'building-projects-that-stand-out',
+    title: 'Building Projects That Stand Out',
+    excerpt:
+      'Why solving real problems matters more than simply adding more technologies to a portfolio.',
+    date: 'January 30, 2026',
+    category: 'Portfolio',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    content: [
+      'Recruiters and hiring managers often care more about problem-solving than technology lists.',
+      'Projects that demonstrate business value tend to leave a stronger impression.',
+      'Clear documentation and thoughtful design choices help showcase engineering skills.',
+      'A portfolio should tell the story of how you think, not just what you have built.',
+    ],
+  },
 ]

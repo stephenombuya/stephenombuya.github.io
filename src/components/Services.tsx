@@ -6,32 +6,175 @@ import { useState } from 'react'
 const services = [
   {
     icon: <Code2 size={24} />,
-    title: 'Web & Software Development',
-    tagline: 'Reliable, scalable, and secure systems',
+    title: 'Web & Application Development',
+    tagline: 'Modern applications built for growth',
     items: [
-      { name: 'Web Development', desc: 'Responsive sites, business sites & modern web apps.' },
-      { name: 'Backend Development', desc: 'APIs, auth systems & scalable server-side applications.' },
-      { name: 'Custom Software', desc: 'Tailored systems to automate & optimize business workflows.' },
+      {
+        name: 'Frontend Development',
+        desc: 'Responsive React, Tailwind CSS and TypeScript applications with exceptional user experiences and AI-powered interfaces.',
+      },
+      {
+        name: 'Backend Development',
+        desc: 'REST APIs, authentication systems, business logic, AI integrations and scalable server-side architecture.',
+      },
+      {
+        name: 'Full-Stack Development',
+        desc: 'End-to-end product development from database design to deployment, including intelligent automation and AI-driven features.',
+      },
+      {
+        name: 'Custom Software Development',
+        desc: 'Business systems tailored to automate workflows, improve efficiency and integrate modern AI capabilities.',
+      },
+      {
+        name: 'Desktop Application Development',
+        desc: 'Java desktop applications, POS systems and offline-first business solutions enhanced with automation and intelligent features.',
+      },
+      {
+        name: 'AI-Powered Application Development',
+        desc: 'Building intelligent applications with AI assistants, chatbots, document processing and automated workflows.',
+      },
+      {
+        name: 'API & AI Integration',
+        desc: 'Connecting applications with AI models, third-party APIs and intelligent services to extend functionality.',
+      },
     ],
   },
+
   {
     icon: <Database size={24} />,
     title: 'Data & Systems Engineering',
-    tagline: 'Turning raw data into structured systems',
+    tagline: 'Reliable systems powered by quality data',
     items: [
-      { name: 'Data Analysis', desc: 'Cleaning, analytics, dashboards & business insights.' },
-      { name: 'Requirements Engineering', desc: 'Gathering, analyzing & documenting system requirements.' },
+      {
+        name: 'Database Design',
+        desc: 'Schema design, normalization, optimization, data modeling and performance tuning for reliable systems.',
+      },
+      {
+        name: 'Data Analysis & Insights',
+        desc: 'Transforming raw data into actionable business insights, dashboards and AI-assisted reports.',
+      },
+      {
+        name: 'AI & Machine Learning Solutions',
+        desc: 'Building intelligent systems using predictive analytics, automation and machine learning capabilities.',
+      },
+      {
+        name: 'Requirements Engineering',
+        desc: 'Gathering, documenting and validating business and technical requirements to build effective solutions.',
+      },
+      {
+        name: 'System Architecture',
+        desc: 'Designing scalable, maintainable and secure software architectures ready for modern cloud and AI workloads.',
+      },
+      {
+        name: 'System Integration',
+        desc: 'Connecting third-party APIs, payment gateways, AI services and external business platforms.',
+      },
+      {
+        name: 'Data Automation',
+        desc: 'Automating data workflows, reporting processes and repetitive business operations.',
+      },
     ],
   },
+
   {
     icon: <TrendingUp size={24} />,
-    title: 'Growth & Digital Marketing',
-    tagline: 'Expand your digital presence',
+    title: 'Digital Growth Solutions',
+    tagline: 'Helping businesses build visibility online',
     items: [
-      { name: 'Digital Marketing', desc: 'SEO strategy, PPC campaigns & analytics optimization.' },
-      { name: 'Social Media', desc: 'Content strategy, audience engagement & campaign tracking.' },
+      {
+        name: 'Software Consulting',
+        desc: 'Technical guidance for startups and growing businesses on architecture, technology choices and digital transformation.',
+      },
+      {
+        name: 'AI Strategy & Integration Consulting',
+        desc: 'Helping businesses identify AI opportunities and integrate intelligent solutions into existing workflows.',
+      },
+      {
+        name: 'Code Reviews',
+        desc: 'Improving code quality, security, maintainability and performance through detailed technical reviews.',
+      },
+      {
+        name: 'Project Planning',
+        desc: 'Creating development roadmaps, feature priorities and technical strategies aligned with business goals.',
+      },
+      {
+        name: 'AI & Workflow Automation',
+        desc: 'Identifying repetitive processes and implementing automation solutions to improve efficiency.',
+      },
+      {
+        name: 'Maintenance & Support',
+        desc: 'Ongoing monitoring, updates, performance improvements and issue resolution for software systems.',
+      },
+      {
+        name: 'Technical Documentation',
+        desc: 'Creating clear documentation for systems, APIs, architecture and development teams.',
+      },
+      {
+        name: 'Technology Audits',
+        desc: 'Evaluating existing systems to identify performance issues, security risks and improvement opportunities.',
+      },
     ],
   },
+
+  {
+    icon: <Code2 size={24} />,
+    title: 'Consulting & Technical Support',
+    tagline: 'Guidance beyond development',
+    items: [
+      {
+        name: 'Software Consulting',
+        desc: 'Technical guidance for startups and growing businesses.',
+      },
+      {
+        name: 'Code Reviews',
+        desc: 'Improving code quality, maintainability and performance.',
+      },
+      {
+        name: 'Project Planning',
+        desc: 'Roadmaps, feature prioritization and technical strategy.',
+      },
+      {
+        name: 'Maintenance & Support',
+        desc: 'Ongoing monitoring, updates and issue resolution.',
+      },
+      {
+        name: 'Technical Documentation',
+        desc: 'Clear documentation for systems, APIs and development teams.',
+      },
+    ],
+  },
+
+  {
+    icon: <Code2 size={24} />,
+    title: 'AI & Intelligent Solutions',
+    tagline: 'Practical AI for modern businesses',
+    items: [
+      {
+        name: 'AI Chatbots',
+        desc: 'Custom chatbots for customer support, lead generation and internal knowledge systems.',
+      },
+      {
+        name: 'AI Integration',
+        desc: 'Integrating OpenAI, Claude, Gemini and other AI services into existing applications.',
+      },
+      {
+        name: 'Document Processing',
+        desc: 'Extracting, classifying and analyzing information from PDFs, forms and business documents.',
+      },
+      {
+        name: 'AI-Powered Automation',
+        desc: 'Automating repetitive business tasks using intelligent workflows and agents.',
+      },
+      {
+        name: 'Knowledge Base Systems',
+        desc: 'Retrieval-Augmented Generation (RAG) systems that answer questions from company data.',
+      },
+      {
+        name: 'AI Content Solutions',
+        desc: 'Tools for content generation, summarization, translation and text analysis.',
+      },
+    ],
+  }
 ]
 
 const testimonials = [
@@ -104,7 +247,7 @@ export default function Services() {
         </div>
 
         {/* Service Cards */}
-        <div className="grid lg:grid-cols-3 gap-6 mb-24">
+        <div className="grid md:grid-cols-2 gap-6 mb-24">
           {services.map((s, i) => (
             <div
               key={s.title}

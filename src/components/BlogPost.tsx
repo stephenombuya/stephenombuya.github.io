@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, Check } from 'lucide-react'
 import { posts } from '../data/posts'
 
 export default function BlogPost() {
@@ -39,9 +39,15 @@ export default function BlogPost() {
 
         <div className="space-y-6">
           {post.content.map((paragraph) => (
-            <p key={paragraph} className="font-body text-gray-300 leading-relaxed text-lg">
-              {paragraph}
-            </p>
+            <div key={paragraph} className="flex items-start gap-4">
+              <div className="w-7 h-7 rounded-full bg-amber-400/20 border border-amber-400 flex items-center justify-center flex-shrink-0 mt-1">
+                <Check size={14} className="text-amber-400" />
+              </div>
+
+              <p className="font-body text-gray-300 leading-relaxed text-lg">
+                {paragraph}
+              </p>
+            </div>
           ))}
         </div>
       </div>

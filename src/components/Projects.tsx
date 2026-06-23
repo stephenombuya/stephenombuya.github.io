@@ -113,9 +113,10 @@ export default function Projects() {
           </h2>
           <span className="animate-in gold-line" />
           <p className="animate-in font-body text-gray-400 mt-8 max-w-2xl leading-relaxed">
-            Real-world software solutions built to solve complex problems — from scalable backend
-            architectures to full-stack applications. Each project reflects a commitment to clean
-            code and performance.
+            Real-world software solutions designed to solve real-world business challenges — from
+            scalable backend systems and full-stack applications to intelligent automation tools.
+            Each project reflects thoughtful architecture, clean engineering practices, and a
+            focus on building reliable products that create measurable impact.
           </p>
         </div>
 

@@ -41,8 +41,9 @@ export default function Contact() {
           <div className="lg:col-span-5 space-y-10">
             <div className="animate-in">
               <p className="font-body text-gray-300 text-lg leading-relaxed">
-                Have a project in mind? Looking for a dedicated backend engineer? I'd love to
-                hear from you. Let's discuss how I can help bring your vision to life.
+                Building something ambitious? I help businesses and teams design, develop, and scale
+                reliable software systems — from backend architecture and custom applications to
+                AI-powered solutions. Let's discuss how I can help bring your ideas to life.
               </p>
             </div>
 

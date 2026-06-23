@@ -2,10 +2,39 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { Download, MapPin, Mail, Heart } from 'lucide-react'
 import ProfileImg from '../assets/images/profile-pic.png';
 
-const languages = ['Java', 'Python', 'JavaScript', 'TypeScript', 'C', 'R', 'HTML5', 'CSS3']
-const webTech = ['Spring Boot', 'React', 'Flask', 'Tailwind CSS', 'Maven', 'Ant Design']
-const constructs = ['RESTful APIs', 'OOP', 'CI/CD', 'Data Structures', 'Algorithms', 'Digital Logic', 'Troubleshooting']
+const languages = [
+  'Java',
+  'Python',
+  'JavaScript',
+  'TypeScript',
+  'SQL',
+  'C',
+]
 
+const technologies = [
+  'Spring Boot',
+  'React',
+  'Flask',
+  'Tailwind CSS',
+  'PostgreSQL',
+  'MySQL',
+  'Docker',
+  'Git',
+  'Linux',
+]
+
+const expertise = [
+  'REST APIs',
+  'System Design',
+  'Software Architecture',
+  'Database Design',
+  'Cloud Fundamentals',
+  'CI/CD',
+  'AI Integration',
+  'Automation',
+  'Data Structures',
+  'Algorithms',
+]
 const education = [
   {
     period: '2022 – 2026',
@@ -13,26 +42,32 @@ const education = [
     degree: 'BSc Software Engineering',
   },
   {
-    period: '2019 – 2023',
+    period: '2023 – Present',
     institution: 'FreeCodeCamp',
-    degree: 'Back-End Dev, Front-End Libraries, JS Algorithms, Responsive Web Design',
+    degree: 'Backend Development · Frontend Libraries · JavaScript Algorithms · Responsive Web Design',
   },
   {
-    period: '2021 – 2022',
+    period: '2021 – Present',
     institution: 'HackerRank',
-    degree: 'Certified in Java, SQL & Python · Algorithm Challenges',
+    degree: 'Certifications in Java, SQL, Python and Algorithmic Problem Solving',
   },
 ]
 
 const experience = [
   {
-    period: '2024 – Present',
-    role: 'Freelance Software Engineer',
-    company: 'Independent',
-    desc: 'Built back-end systems for Real Estate, Hotel, and Hospital management. Developed scalable RESTful APIs and integrated databases for global clients.',
+    period: '2025 – Present',
+    role: 'AI & Software Solutions Developer',
+    company: 'Independent Projects',
+    desc: 'Built AI-enhanced applications integrating intelligent automation, data processing and modern AI tools into software systems.',
   },
   {
     period: '2024 – Present',
+    role: 'Freelance Software Engineer',
+    company: 'Independent',
+    desc: 'Designed and developed scalable backend systems, REST APIs, database architectures and business automation solutions for real estate, hospitality and healthcare platforms.',
+  },
+  {
+    period: '2024 – 2025',
     role: 'Tech Tutor',
     company: 'Private Instruction',
     desc: 'Taught programming fundamentals to private school students. Designed engaging, hands-on coding curricula.',
@@ -77,7 +112,7 @@ export default function About() {
               {[
                 { icon: <MapPin size={14} />, label: 'Nairobi, Kenya' },
                 { icon: <Mail size={14} />, label: 'michiekaombuya@gmail.com' },
-                { icon: <Heart size={14} />, label: 'Cooking · Hiking · Chess' },
+                { icon: <Heart size={14} />, label: 'Software · Problem Solving · Chess' },
               ].map((f) => (
                 <div key={f.label} className="flex items-center gap-3">
                   <span className="text-amber-400">{f.icon}</span>
@@ -104,16 +139,19 @@ export default function About() {
             {/* Bio text */}
             <div className="animate-in">
               <p className="font-body text-gray-300 text-lg leading-relaxed mb-4">
-                I'm a <span className="text-cream font-medium">dedicated Software Engineer</span>{' '}
-                with a passion for creative problem-solving and a deep love for programming. I excel
-                in ideating, conceptualizing, and developing technology-enabled products from the
-                ground up.
+                I'm a <span className="text-cream font-medium">Software Engineer</span> passionate about
+                designing and building reliable digital systems. I specialize in backend development,
+                full-stack applications, database architecture, and creating scalable solutions that
+                solve real-world business problems.
               </p>
+
               <p className="font-body text-gray-400 leading-relaxed">
-                Currently completing my final semester at The Cooperative University of Kenya, I'm
-                eager to explore backend and full-stack opportunities at innovative startups and
-                scalable companies around the world.
+                From RESTful APIs and custom software platforms to AI-powered solutions and automation
+                systems, I enjoy transforming ideas into products that are secure, maintainable, and
+                built for growth. I am continuously exploring better ways to engineer software and
+                create meaningful impact through technology.
               </p>
+              
             </div>
 
             {/* Skills */}
@@ -122,8 +160,8 @@ export default function About() {
               <div className="space-y-6">
                 {[
                   { title: 'Languages', tags: languages },
-                  { title: 'Web Technologies', tags: webTech },
-                  { title: 'CS Constructs', tags: constructs },
+                  { title: 'Web Technologies', tags: technologies },
+                  { title: 'CS Constructs', tags: expertise },
                 ].map((group) => (
                   <div key={group.title}>
                     <p className="font-body text-xs text-gray-500 uppercase tracking-widest mb-3">

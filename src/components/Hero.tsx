@@ -6,26 +6,28 @@ import { projects } from '../data/projects'
 import { posts } from '../data/posts'
 
 const specialties = [
-  'Java & Spring Boot',
-  'REST APIs',
-  'Database Design',
+  'Backend Engineering',
+  'Full-Stack Development',
   'System Architecture',
-  'Automation & CI/CD',
-  'Product Thinking',
+  'AI Integration',
+  'Database Engineering',
+  'Cloud & DevOps',
+  'Automation',
+  'Product Engineering',
 ]
 
 const processSteps = [
   {
-    title: 'Discover',
-    text: 'I clarify goals, constraints, and success metrics before shaping the solution.',
+    title: 'Understand',
+    text: 'I analyze requirements, business goals, and technical challenges before designing the right solution.',
   },
   {
-    title: 'Build',
-    text: 'I turn ideas into clean, scalable systems with strong architecture and testing.',
+    title: 'Engineer',
+    text: 'I build clean, scalable software with strong architecture, testing, and maintainability in mind.',
   },
   {
-    title: 'Deliver',
-    text: 'I focus on launch readiness, reliability, and a smooth handoff for teams.',
+    title: 'Improve',
+    text: 'I optimize performance, reliability, and workflows to ensure long-term success.',
   },
 ]
 
@@ -83,11 +85,12 @@ export default function Hero() {
                 data-reveal
                 className="animate-in font-body text-gray-400 text-lg leading-relaxed max-w-xl mb-10"
               >
-                Backend-focused engineer building production-grade systems with{' '}
+                Software Engineer building scalable digital products with{' '}
                 <span className="text-cream">Java</span>,{' '}
                 <span className="text-cream">Spring Boot</span>, and{' '}
-                <span className="text-cream">Python</span>. I architect scalable APIs, secure
-                authentication flows, and data-driven platforms that power real products.
+                <span className="text-cream">Python</span>. I design backend systems,
+                intelligent applications, and reliable software architectures that help
+                businesses solve real-world problems.
               </p>
 
               <div data-reveal className="animate-in flex flex-wrap gap-4 mb-16">
@@ -145,9 +148,21 @@ export default function Hero() {
             {/* Stats / Right Panel */}
             <div className="lg:col-span-5 flex flex-col gap-4">
               {[
-                { num: '3+', label: 'Years of Experience', sub: 'Full-stack & backend' },
-                { num: '15+', label: 'Projects Delivered', sub: 'Freelance & personal' },
-                { num: '5+', label: 'Tech Certifications', sub: 'HackerRank, FCC & more' },
+                {
+                  num: '15+',
+                  label: 'Projects Built',
+                  sub: 'Web, desktop & business systems',
+                },
+                {
+                  num: '10+',
+                  label: 'Technologies',
+                  sub: 'Backend, frontend & AI tools',
+                },
+                {
+                  num: '3+',
+                  label: 'Years Coding',
+                  sub: 'Software engineering journey',
+                },
               ].map((stat, i) => (
                 <div
                   key={stat.label}
@@ -183,11 +198,11 @@ export default function Hero() {
             <div className="animate-in">
               <p className="section-label">What I Bring</p>
               <h2 className="section-title text-4xl md:text-5xl">
-                Building <em className="text-amber-400">systems</em> that scale.
+                Building <em className="text-amber-400">scalable products</em> that create impact.
               </h2>
               <p className="font-body text-gray-400 mt-6 leading-relaxed">
-                I focus on solving real business problems with thoughtful architecture, clean implementation,
-                and a strong eye for long-term maintainability.
+                I transform ideas into reliable software through thoughtful architecture,
+                clean engineering practices, and scalable solutions designed for long-term growth.
               </p>
               <div className="flex flex-wrap gap-3 mt-8">
                 {specialties.map((item) => (
@@ -202,36 +217,38 @@ export default function Hero() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                {
-                  icon: <Sparkles size={18} />,
-                  title: 'Product thinking',
-                  text: 'Turning requirements into practical, user-centered software decisions.',
-                },
-                {
-                  icon: <Code2 size={18} />,
-                  title: 'Modern development',
-                  text: 'Writing maintainable code with clean APIs and scalable frontend patterns.',
-                },
-                {
-                  icon: <Database size={18} />,
-                  title: 'Data & reliability',
-                  text: 'Designing secure systems that are resilient, observable, and efficient.',
-                },
-                {
-                  icon: <ArrowRight size={18} />,
-                  title: 'Continuous delivery',
-                  text: 'Improving workflows so teams can iterate faster with confidence.',
-                },
-              ].map((item, index) => (
-                <div key={item.title} className={`animate-in stagger-${index + 1} card-base card-hover`}>
-                  <div className="w-12 h-12 border border-amber-400/20 flex items-center justify-center text-amber-400 mb-4">
-                    {item.icon}
+              {
+                [
+                  {
+                    icon: <Sparkles size={18} />,
+                    title: 'Product Engineering',
+                    text: 'Turning business ideas into practical, scalable software solutions.',
+                  },
+                  {
+                    icon: <Code2 size={18} />,
+                    title: 'Software Architecture',
+                    text: 'Designing maintainable systems with clean code and strong foundations.',
+                  },
+                  {
+                    icon: <Database size={18} />,
+                    title: 'Data & Intelligence',
+                    text: 'Building reliable data systems and AI-powered solutions.',
+                  },
+                  {
+                    icon: <ArrowRight size={18} />,
+                    title: 'Engineering Excellence',
+                    text: 'Using automation, testing and modern workflows to deliver quality software.',
+                  },
+                ].map((item, index) => (
+                  <div key={item.title} className={`animate-in stagger-${index + 1} card-base card-hover`}>
+                    <div className="w-12 h-12 border border-amber-400/20 flex items-center justify-center text-amber-400 mb-4">
+                      {item.icon}
+                    </div>
+                    <h3 className="font-body text-cream font-medium mb-2">{item.title}</h3>
+                    <p className="font-body text-sm text-gray-500 leading-relaxed">{item.text}</p>
                   </div>
-                  <h3 className="font-body text-cream font-medium mb-2">{item.title}</h3>
-                  <p className="font-body text-sm text-gray-500 leading-relaxed">{item.text}</p>
-                </div>
-              ))}
+                ))
+              }
             </div>
           </div>
         </div>
